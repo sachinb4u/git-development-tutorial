@@ -43,7 +43,7 @@ There are a set of rules to keep in mind:
 
 
 <a name="writing-good-commit-messages"></a>
-### 1.3 Writing good commit messages
+## Writing good commit messages
 
 Having a good guideline for creating commits and sticking to it makes working with Git and collaborating with others a lot easier. Here are some rules of thumb ([source](https://chris.beams.io/posts/git-commit/#seven-rules)):
 
