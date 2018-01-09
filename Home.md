@@ -1,31 +1,30 @@
 ## GitHub Guidelines
 
-### Some Git rules
 There are a set of rules to keep in mind:
 * Perform work in a feature branch.
     
     _Why:_
     >Because this way all work is done in isolation on a dedicated branch rather than the main branch. It allows you to submit multiple pull requests without confusion. You can iterate without polluting the master branch with potentially unstable, unfinished code. [read more...](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow)
-* Branch out from `develop`
+* Branch out from `master` or release branch (on which issue to be fixed)
     
     _Why:_
     >This way, you can make sure that code in master will almost always build without problems, and can be mostly used directly for releases (this might be overkill for some projects).
 
-* Never push into `develop` or `master` branch. Make a Pull Request.
+* Never push into `master` branch. Make a Pull Request. (_Push rights are removed for all developers, only pull requests allowed_)
     
     _Why:_
     > It notifies team members that they have completed a feature. It also enables easy peer-review of the code and dedicates forum for discussing the proposed feature.
 
-* Update your local `develop` branch and do an interactive rebase before pushing your feature and making a Pull Request.
+* Update your local `master` branch and do an interactive rebase before pushing your feature and making a Pull Request.
 
     _Why:_
-    > Rebasing will merge in the requested branch (`master` or `develop`) and apply the commits that you have made locally to the top of the history without creating a merge commit (assuming there were no conflicts). Resulting in a nice and clean history. [read more ...](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+    > Rebasing will merge in the requested branch (`master`) and apply the commits that you have made locally to the top of the history without creating a merge commit (assuming there were no conflicts). Resulting in a nice and clean history. [read more ...](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 * Resolve potential conflicts while rebasing and before making a Pull Request.
 * Delete local and remote feature branches after merging.
     
     _Why:_
-    > It will clutter up your list of branches with dead branches. It insures you only ever merge the branch back into (`master` or `develop`) once. Feature branches should only exist while the work is still in progress.
+    > It will clutter up your list of branches with dead branches. It insures you only ever merge the branch back into (`master`) once. Feature branches should only exist while the work is still in progress.
 
 * Before making a Pull Request, make sure your feature branch builds successfully and passes all tests (including code style checks).
     
@@ -37,7 +36,7 @@ There are a set of rules to keep in mind:
     _Why:_
     > It already has a list of system files that should not be sent with your code into a remote repository. In addition, it excludes setting folders and files for most used editors, as well as most common dependency folders.
 
-* Protect your `develop` and `master` branch.
+* Protect your `master` branch.
   
     _Why:_
     > It protects your production-ready branches from receiving unexpected and irreversible changes. read more... [Github](https://help.github.com/articles/about-protected-branches/) and [Bitbucket](https://confluence.atlassian.com/bitbucketserver/using-branch-permissions-776639807.html)
