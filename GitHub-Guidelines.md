@@ -1,16 +1,16 @@
 ## GitHub Guidelines
 
 There are a set of rules to keep in mind:
-* Perform work in a feature branch.
+* Perform work in a feature branch. Do not make any changes on `master` branch
     
     _Why:_
-    >Because this way all work is done in isolation on a dedicated branch rather than the main branch. It allows you to submit multiple pull requests without confusion. You can iterate without polluting the master branch with potentially unstable, unfinished code. [read more...](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow)
-* Branch out from `master` or release branch (on which issue to be fixed)
+    >Because this way all work is done in isolation on a dedicated branch rather than the main branch. It allows you to submit multiple pull requests without confusion. You can iterate without polluting the master branch with potentially unstable, unfinished code. 
+* Branch out from `master` or release (e.g. `OCB83SP04`) branch on which work to be done
     
     _Why:_
     >This way, you can make sure that code in master will almost always build without problems, and can be mostly used directly for releases (this might be overkill for some projects).
 
-* Never push into `master` branch. Make a Pull Request. (_Push rights are removed for all developers, only pull requests allowed_)
+* Never push into `master` branch. Make a Pull Request.
     
     _Why:_
     > It notifies team members that they have completed a feature. It also enables easy peer-review of the code and dedicates forum for discussing the proposed feature.
@@ -21,6 +21,7 @@ There are a set of rules to keep in mind:
     > Rebasing will merge in the requested branch (`master`) and apply the commits that you have made locally to the top of the history without creating a merge commit (assuming there were no conflicts). Resulting in a nice and clean history. [read more ...](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 * Resolve potential conflicts while rebasing and before making a Pull Request.
+
 * Delete local and remote feature branches after merging.
     
     _Why:_
@@ -31,15 +32,10 @@ There are a set of rules to keep in mind:
     _Why:_
     > You are about to add your code to a stable branch. If your feature-branch tests fail, there is a high chance that your destination branch build will fail too. Additionally, you need to apply code style check before making a Pull Request. It aids readability and reduces the chance of formatting fixes being mingled in with actual changes.
 
-* Use [this](./.gitignore) `.gitignore` file.
+* Use `.gitignore` file.
     
     _Why:_
     > It already has a list of system files that should not be sent with your code into a remote repository. In addition, it excludes setting folders and files for most used editors, as well as most common dependency folders.
-
-* Protect your `master` branch.
-  
-    _Why:_
-    > It protects your production-ready branches from receiving unexpected and irreversible changes. read more... [Github](https://help.github.com/articles/about-protected-branches/) and [Bitbucket](https://confluence.atlassian.com/bitbucketserver/using-branch-permissions-776639807.html)
 
 
 <a name="writing-good-commit-messages"></a>
@@ -62,7 +58,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
  * Use [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood) in the subject line.
 
     _Why:_
-    > Rather than writing messages that say what a committer has done. It's better to consider these messages as the instructions for what is going to be done after the commit is applied on the repository. [read more...](https://news.ycombinator.com/item?id=2079612)
+    > Rather than writing messages that say what a committer has done. It's better to consider these messages as the instructions for what is going to be done after the commit is applied on the repository. 
 
 
  * Use the body to explain **what** and **why** as opposed to **how**.
