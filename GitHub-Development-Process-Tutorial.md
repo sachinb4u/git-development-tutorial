@@ -12,11 +12,14 @@
          * You will have repository cloned in `C:\temp\git-demo`
 
 3. You must configure a remote that points to the upstream repository in Git to sync changes you make in a fork with the original repository. This also allows you to sync changes made in the original repository with the fork.
-    * List the current configured remote repository for your fork <br/>
-        `C:\temp\git-demo>git remote -v`<br/>
-        `origin  git@github.wdf.sap.corp:i313873/git-demo.git (fetch)`<br/>
-        `origin  git@github.wdf.sap.corp:i313873/git-demo.git (push)`<br/>
-    * configure a remote forked
+    * List the current configured remote repository for your fork 
+```
+        C:\temp\git-demo>git remote -v
+        origin  git@github.wdf.sap.corp:i313873/git-demo.git (fetch)
+        origin  git@github.wdf.sap.corp:i313873/git-demo.git (push)
+```  
+  
+* configure a remote forked
 	
 	references:
 		https://help.github.com/articles/configuring-a-remote-for-a-fork/
