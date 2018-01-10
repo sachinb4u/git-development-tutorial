@@ -14,23 +14,23 @@
 3. You must configure a remote that points to the upstream repository in Git to sync changes you make in a fork with the original repository. This also allows you to sync changes made in the original repository with the fork.
     * List the current configured remote repository for your fork 
 ```
-        C:\temp\git-demo> git remote -v
-        origin  git@github.wdf.sap.corp:i313873/git-demo.git (fetch)
-        origin  git@github.wdf.sap.corp:i313873/git-demo.git (push)
+  C:\temp\git-demo> git remote -v
+  origin  git@github.wdf.sap.corp:i313873/git-demo.git (fetch)
+  origin  git@github.wdf.sap.corp:i313873/git-demo.git (push)
 ```  
   
 4. Specify a new remote upstream repository that will be synced with the fork.
 ```
-        C:\temp\git-demo> git remote add upstream https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git
+  C:\temp\git-demo> git remote add upstream https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git
 ```
 
 5. Verify the new upstream repository you've specified for your fork.
 ```
-        C:\temp\git-demo> git remote -v
-        origin  git@github.wdf.sap.corp:i313873/git-demo.git (fetch)
-        origin  git@github.wdf.sap.corp:i313873/git-demo.git (push)
-        upstream        https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git (fetch)
-        upstream        https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git (push)
+  C:\temp\git-demo> git remote -v
+  origin  git@github.wdf.sap.corp:i313873/git-demo.git (fetch)
+  origin  git@github.wdf.sap.corp:i313873/git-demo.git (push)
+  upstream        https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git (fetch)
+  upstream        https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git (push)
 ```
 	
 	references:
