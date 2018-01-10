@@ -32,7 +32,27 @@
   upstream        https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git (fetch)
   upstream        https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git (push)
 ```
-	
+
+6. Syncing a fork repository
+    - Fetch the branches and their respective commits from the upstream repository.
+  ```
+  C:\temp\git-demo> git fetch upstream
+  remote: Counting objects: 1, done.
+  remote: Total 1 (delta 0), reused 1 (delta 0), pack-reused 0
+  Unpacking objects: 100% (1/1), done.
+  From github.wdf.sap.corp:OmniChannelBanking/git-demo
+   * [new branch]      master     -> upstream/master
+  ```	
+
+    - Check out your fork's local `master` branch.
+
+  ```
+  git checkout master
+  ```
+
+
+
+
 	references:
 		https://help.github.com/articles/configuring-a-remote-for-a-fork/
 
