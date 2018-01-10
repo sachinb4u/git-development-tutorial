@@ -45,11 +45,17 @@
       ```	
     - Check out your fork's local `master` branch.
       ```
-      C:\temp\git-demo>git checkout master
+      C:\temp\git-demo> git checkout master
       Switched to branch 'master'
       ```
-
-
+    - Merge the changes from `upstream/master` into your local `master` branch. This brings your fork's `master` branch into sync with the upstream repository, without losing your local changes.
+      ```
+      C:\temp\git-demo> git merge upstream/master
+      Updating 65aa625..9de8458
+      Fast-forward
+       README.md | 9 ++++++++-
+       1 file changed, 8 insertions(+), 1 deletion(-)
+      ```
 
 
 	references:
