@@ -8,18 +8,30 @@
 2. Clone forked repository locally
     * Go to local path where you want to clone repository e.g. C:\temp
     * Clone your forked repository
-         * `git clone https://github.wdf.sap.corp/i313873/git-demo.git`
+         * `C:\temp> git clone https://github.wdf.sap.corp/i313873/git-demo.git`
          * You will have repository cloned in `C:\temp\git-demo`
 
 3. You must configure a remote that points to the upstream repository in Git to sync changes you make in a fork with the original repository. This also allows you to sync changes made in the original repository with the fork.
     * List the current configured remote repository for your fork 
 ```
-        C:\temp\git-demo>git remote -v
+        C:\temp\git-demo> git remote -v
         origin  git@github.wdf.sap.corp:i313873/git-demo.git (fetch)
         origin  git@github.wdf.sap.corp:i313873/git-demo.git (push)
 ```  
   
-* configure a remote forked
+4. Specify a new remote upstream repository that will be synced with the fork.
+```
+        C:\temp\git-demo> git remote add upstream https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git
+```
+
+5. Verify the new upstream repository you've specified for your fork.
+```
+        C:\temp\git-demo> git remote -v
+        origin  git@github.wdf.sap.corp:i313873/git-demo.git (fetch)
+        origin  git@github.wdf.sap.corp:i313873/git-demo.git (push)
+        upstream        https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git (fetch)
+        upstream        https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git (push)
+```
 	
 	references:
 		https://help.github.com/articles/configuring-a-remote-for-a-fork/
