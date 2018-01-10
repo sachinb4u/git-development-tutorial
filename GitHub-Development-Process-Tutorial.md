@@ -1,8 +1,12 @@
 > Following steps give an overview of how GitHub development process will work.
 
 1. Fork a repository
+    * Go to https://github.wdf.sap.corp/OmniChannelBanking/git-demo
+    * Click on Fork and select your account to fork the repository.
+    * e.g. I fork repository to my account and URL would be https://github.wdf.sap.corp/i313873/git-demo
 
 2. Clone forked repository locally
+
 
 3. Setup upstream repository on local machine
 	- configure a remote forked
