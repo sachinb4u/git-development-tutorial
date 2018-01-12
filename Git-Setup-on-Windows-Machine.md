@@ -1,0 +1,1 @@
+Follow below instructions to setup Git on your Windows machine.
