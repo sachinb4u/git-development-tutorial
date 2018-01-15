@@ -77,3 +77,14 @@ You can find a good explanation of this property in the book Pro Git. See the Gi
 * `core.filemode`
 This property defines whether to ignore the executable bit difference. It can also cause mysterious differences, immediately after cloning a repository. The reason behind is that unlike OSX/Linux, Windows does not support the executable bit on files.
 All Windows users should set this property to false to avoid running into this issue.
+
+
+### Generate SSH key
+
+- Search git bash in start and open it
+
+- Run the command `ssh-keygen -t rsa -C "your_email@example.com"`. Press enter on prompt. It will save below 2 files in /c/users/i313873/.ssh folder
+    * id_rsa - private key
+    * id_rsa.pub - public key
+
+- Go to https://github.wdf.sap.corp and follow https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ to add your SSH key to your GitHub account.
