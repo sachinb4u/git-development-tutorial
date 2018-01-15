@@ -20,6 +20,7 @@ Once you have installed Git, you will have to adapt the .gitconfig file to prope
 [user]
     name = <Your Real Name, e.g. Sachin Bhosale>
     email = <your sap email address, e.g. s.bhosale@sap.com>
+
 [color]
     ui = true
     status = auto
@@ -28,8 +29,10 @@ Once you have installed Git, you will have to adapt the .gitconfig file to prope
 [core]
     autocrlf = true
     filemode = false
+
 [http]
     proxy = http://proxy.wdf.sap.corp:8080
+    sslVerify = false
 
 [https]
     proxy = http://proxy.wdf.sap.corp:8080
