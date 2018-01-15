@@ -3,7 +3,6 @@ Follow below instructions to setup Git on your Windows machine.
 ## Git Installation on Windows
 
 The most official build is available for download on the Git website. Just go to *__\\\uapune1.sybase.com\OCB_Softwares\Sachin\Git__* (intranet) or http://git-scm.com/download/win (internet) and the download will start automatically. 
-Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to https://git-for-windows.github.io/.
 
 
 ## Git Configuration
@@ -17,7 +16,7 @@ Once you have installed Git, you will have to adapt the .gitconfig file to prope
 4. Paste the following into the .gitconfig file:
 ```
 [user]
-    name = <Your Real Name, e.g. Sachin Bhoslae>
+    name = <Your Real Name, e.g. Sachin Bhosale>
     email = <your sap email address, e.g. s.bhosale@sap.com>
 [color]
     ui = true
@@ -35,3 +34,22 @@ Once you have installed Git, you will have to adapt the .gitconfig file to prope
     renameLimit = 9000
     tool = /Applications/kdiff3.app
 ```
+5. Save and close the file.
+
+
+That's it. What this does is the following:
+
+* `user.name`
+Needs to be your full name. For example, John Smith. Git stores your full name in every commit that you create. Therefore, it is important to set this property before you start committing your changes. In case this property is not set, Git will take some incorrect default value, such as your user.name; most likely it will be your dXXXXXX or iXXXXXX username.
+* `user.email`
+Your SAP e-mail address. Git stores your e-mail address in every commit that you create. Unfortunately, the default e-mail that Git gets from the operating system is iXXXXXX@your-machine-name, which is not your SAP e-mail address. Therefore, it is important to set this property before you start committing your changes. In case this property is not set Git will take some default as your `user.email`. 
+
+* `core.autocrlf`
+Defines CRLF <-> LF conversion rules for checkout and commit of text files. This property tends to be ignored by developers, until they run into line-ending issues. On Windows machines, when you hit 'return' at the end of a line, Windows adds two invisible characters a CR (carriage return) and an LF (line feed) - hence CRLF - on Linux and Mac only an LF (line feed) char is added. Thus if you are developing an a team mixed with Windows / Mac users, the line endings - if not properly converted - will show up as differences and cause merge conflicts.
+A common symptom for that problem is that a developer clones a Git repository. Immediately after that the git status command reports a lot of changes done locally. The developer is sure that there were no changes done locally and executes git diff to find out what the changes are. Git reports differences in line endings. 
+This issue is often caused by usage of different settings for the core.autocrlf property within one and the same development team.
+You can find a good explanation of this property in the book Pro Git. See the Git Configuration chapter and search for core.autocrlf.
+
+* `core.filemode`
+This property defines whether to ignore the executable bit difference. It can also cause mysterious differences, immediately after cloning a repository. The reason behind is that unlike OSX/Linux, Windows does not support the executable bit on files.
+All Windows users should set this property to false to avoid running into this issue.
