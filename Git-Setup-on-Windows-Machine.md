@@ -88,3 +88,10 @@ All Windows users should set this property to false to avoid running into this i
     * id_rsa.pub - public key
 
 - Go to https://github.wdf.sap.corp and follow https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/ to add your SSH key to your GitHub account.
+
+- After adding SSH key, open Git Bash and run below command to see if authentication is successful
+```
+    I313873@PNQN50910881A MINGW64 ~
+    $ ssh -T git@github.wdf.sap.corp
+    Hi i313873! You've successfully authenticated, but GitHub does not provide shell access.
+```
