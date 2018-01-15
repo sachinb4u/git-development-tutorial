@@ -2,7 +2,9 @@ Follow below instructions to setup Git on your Windows machine.
 
 ## Git Installation on Windows
 
-The most official build is available for download on the Git website. Just go to *__\\\uapune1.sybase.com\OCB_Softwares\Sachin\Git__* (intranet) or http://git-scm.com/download/win (internet) and the download will start automatically. 
+- The most official build is available for download on the Git website. Just go to *__\\\uapune1.sybase.com\OCB_Softwares\Sachin\Git__* (intranet) or http://git-scm.com/download/win (internet) and the download will start automatically. 
+
+- Install WinMerge for merging changes in case of mergconflict. **_\\\uapune1.sybase.com\OCB_Softwares\Sachin\Git_** or http://winmerge.org/
 
 
 ## Git Configuration
@@ -28,11 +30,30 @@ Once you have installed Git, you will have to adapt the .gitconfig file to prope
     filemode = false
 [http]
     proxy = http://proxy.wdf.sap.corp:8080
+
 [https]
     proxy = http://proxy.wdf.sap.corp:8080
+
+[mergetool]
+    prompt = false
+    keepBackup = false
+    keepTemporaries = false
+	
 [merge]
-    renameLimit = 9000
-    tool = /Applications/kdiff3.app
+    tool = winmerge
+
+[mergetool "winmerge"]
+    name = WinMerge
+    trustExitCode = true
+    cmd = "/c/Program\\ Files\\ \\(x86\\)/WinMerge/WinMergeU.exe" -u -e -dl \"Local\" -dr \"Remote\" $LOCAL $REMOTE $MERGED
+
+[diff]
+    tool = winmerge
+
+[difftool "winmerge"]
+    name = WinMerge
+    trustExitCode = true
+    cmd = "/c/Program\\ Files\\ \\(x86\\)/WinMerge/WinMergeU.exe" -u -e $LOCAL $REMOTE
 ```
 5. Save and close the file.
 
