@@ -32,7 +32,7 @@
     upstream        https://github.wdf.sap.corp/OmniChannelBanking/git-demo.git (push)
 ```
 
-### Syncing local repository with Upstream repository
+### Syncing repository with Upstream changes
 
 - Fetch the branches and their respective commits from the upstream repository.
 ```
