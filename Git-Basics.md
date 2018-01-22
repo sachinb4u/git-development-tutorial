@@ -50,13 +50,13 @@ a1e8fb5 Make some important changes to hello.txt
 ```
 We will focus on undoing the 872fa7e Try something crazy commit. Maybe things got a little too crazy.
 
-- `git reset`
-    - `git reset --hard a1e8fb5 ` 
-    
-       Commit history is reset to that specified commit. Examining the commit history with `git log` will now look like
-    ```
-      git log --oneline
-      a1e8fb5 Make some important changes to hello.txt
-      435b61d Create hello.txt
-      9773e52 Initial import
-    ```
+
+- `git reset --hard a1e8fb5 ` 
+
+   Commit history is reset to that specified commit. Examining the commit history with `git log` will now look like
+```
+  git log --oneline
+  a1e8fb5 Make some important changes to hello.txt
+  435b61d Create hello.txt
+  9773e52 Initial import
+```
