@@ -1,3 +1,5 @@
+# Git Setup on Windows Machine
+
 Follow below instructions to setup Git on your Windows machine.
 
 ## Git Installation on Windows
