@@ -75,4 +75,4 @@ Once you have installed Git, you will have to adapt the .gitconfig file to prope
 
 - After adding SSH key, open `Git Bash` and run below command to see if authentication is successful
     * `ssh -T git@githuib.wdf.sap.corp`
-    * ![Git Login Test](contents/images/git-configuration/git-test.png)
+    ![Git Login Test](contents/images/git-configuration/git-test.png)
