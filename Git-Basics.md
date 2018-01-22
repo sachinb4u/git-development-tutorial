@@ -60,3 +60,7 @@ We will focus on undoing the 872fa7e Try something crazy commit. Maybe things go
   435b61d Create hello.txt
   9773e52 Initial import
 ```
+
+- `git commit --amend`
+
+   In some cases though, you might not need to remove or reset the last commit. Maybe it was just made prematurely. In this case you can amend the most recent commit. Once you have made more changes in the working directory and staged them for commit by using `git add`, you can execute `git commit --amend`. This will have Git open the configured system editor and let you modify the last commit message. The new changes will be added to the amended commit.
