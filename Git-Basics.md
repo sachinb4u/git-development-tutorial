@@ -14,5 +14,14 @@ git commit -m "<your-commit-message"  # commits all staged changes
 git commit                            # open editor(notepad++) for typing commit message
 ```
 
-
+### Stashing your work
+The `git stash` command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy
+```
+git stash                        # stashes staged changes
+git stash save "<stash-message>"
+git stash -u                     # stash staged files including untracked files
+git stash list                   # list stashed changes
+git stash show stash@{0}         # show stash details
+git stash apply stash@{0}        # apply stash changes to working directory
+```
 
