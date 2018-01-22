@@ -2,7 +2,7 @@
 
 Follow below instructions to setup Git on your Windows machine.
 
-## Git Installation on Windows
+## Prerequisites
 
 - Follow [Git Installation steps](https://github.wdf.sap.corp/OmniChannelBanking/git-demo/wiki/Git-Installation-on-Windows) - **Make sure everyone has same configuration given on the link** ❗️
 
