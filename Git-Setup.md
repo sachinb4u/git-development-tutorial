@@ -74,4 +74,5 @@ Once you have installed Git, you will have to adapt the .gitconfig file to prope
 - Go to [https://github.wdf.sap.corp](https://github.wdf.sap.corp) and follow the instructions on [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) 
 
 - After adding SSH key, open `Git Bash` and run below command to see if authentication is successful
-![Git Login Test](contents/images/git-configuration/git-test.png)
+    * `ssh -T git@githuib.wdf.sap.corp`
+    * ![Git Login Test](contents/images/git-configuration/git-test.png)
