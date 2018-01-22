@@ -38,3 +38,25 @@ git stash apply stash@{0}        # apply stash changes to working directory
 
 - `git log --oneline`
 > Condense each commit to a single line. This is useful for getting a high-level overview of the project history
+
+### Undoing a committed snapshot
+There are technically several different strategies to 'undo' a commit. The following examples will assume we have a commit history that looks like:
+```
+git log --oneline
+872fa7e Try something crazy
+a1e8fb5 Make some important changes to hello.txt
+435b61d Create hello.txt
+9773e52 Initial import
+```
+We will focus on undoing the 872fa7e Try something crazy commit. Maybe things got a little too crazy.
+
+- `git reset`
+    - `git reset --hard a1e8fb5 ` 
+    
+       Commit history is reset to that specified commit. Examining the commit history with `git log` will now look like
+    ```
+      git log --oneline
+      a1e8fb5 Make some important changes to hello.txt
+      435b61d Create hello.txt
+      9773e52 Initial import
+    ```
