@@ -1,4 +1,4 @@
-> Following steps give an overview of how GitHub development process will work.
+> Following steps explain how to setup forked repository for the development
 
 ### Fork a repository
 * Go to https://github.wdf.sap.corp/OmniChannelBanking/git-demo
