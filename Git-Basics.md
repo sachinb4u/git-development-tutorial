@@ -68,6 +68,8 @@ We will focus on undoing the 872fa7e Try something crazy commit. Maybe things go
 ### Undoing uncommitted changes
 
 Before changes are committed to the repository history, they live in the staging index and the working directory. You may need to undo changes within these two areas. The staging index and working directory are internal Git state management mechanisms. For more detailed information on how these two mechanisms operate, visit the [`git reset`](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting) page which explores them in depth
+> The scope of `git reset` modes
+
 ![](contents/images/git-basics/git-reset-params.png)
 - `git reset --soft` - The staged snapshot and working directory are not altered in any way.
 - `git reset --mixed`- The staged snapshot is updated to match the specified commit, but the working directory is not affected. This is the default option.
@@ -88,5 +90,14 @@ Command | Scope | Common use cases
 
 - `git clean -n` - The -n option will perform a "dry run" of `git clean`. This will show you which files are going to be removed without actually removing them. It is a best practice to always first perform a dry run of `git clean`
 
-### What is `git rebase`
+### What is `git rebase`?
+Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow. The general process can be visualized as the following:
 ![](contents/images/git-basics/git-rebase.png)
+
+>This automatically rebases the current branch onto <base>, which can be any kind of commit reference (for example an ID, a branch name, a tag, or a relative reference to HEAD).
+
+```
+   git checkout feature
+   git rebase
+```
+
