@@ -1,3 +1,7 @@
+## Install `Git-2.15.1.2-64-bit.exe` from the location below
+    * \\uapune1.sybase.com\OCB_Softwares\Sachin\Git
+    * http://git-scm.com/download/win
+
 - Step1 <br>
 ![Step1](contents/images/git-setup/git-setup1.png)
 - Step2 <br>
