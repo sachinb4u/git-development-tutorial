@@ -1,3 +1,5 @@
+# Git Installation on Windows
+
 ## Install `Git-2.15.1.2-64-bit.exe` from the location below
 * \\\uapune1.sybase.com\OCB_Softwares\Sachin\Git
 * http://git-scm.com/download/win (link starts download immediately
