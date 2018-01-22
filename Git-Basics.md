@@ -73,3 +73,12 @@ Before changes are committed to the repository history, they live in the staging
 - `git reset --mixed`- The staged snapshot is updated to match the specified commit, but the working directory is not affected. This is the default option.
 - `git reset --hard` - The staged snapshot and the working directory are both updated to match the specified commit.
 
+>The table below sums up the most common use cases for all of these commands
+Command | Scope | Common use cases
+--------|-------|-----------------
+`git reset` | Commit-level | Discard commits in a private branch or throw away uncommited changes
+`git reset` | File-level |Unstage a file
+`git checkout` | Commit-level | Switch between branches or inspect old snapshots
+`git checkout` | File-level | Discard changes in the working directory
+`git revert` | Commit-level | Undo commits in a public branch
+`git revert` | File-level | (N/A)
