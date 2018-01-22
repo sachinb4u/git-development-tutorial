@@ -64,3 +64,12 @@ We will focus on undoing the 872fa7e Try something crazy commit. Maybe things go
 - `git commit --amend`
 
    In some cases though, you might not need to remove or reset the last commit. Maybe it was just made prematurely. In this case you can amend the most recent commit. Once you have made more changes in the working directory and staged them for commit by using `git add`, you can execute `git commit --amend`. This will have Git open the configured system editor and let you modify the last commit message. The new changes will be added to the amended commit.
+
+### Undoing uncommitted changes
+
+Before changes are committed to the repository history, they live in the staging index and the working directory. You may need to undo changes within these two areas. The staging index and working directory are internal Git state management mechanisms. For more detailed information on how these two mechanisms operate, visit the [`git reset`](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting) page which explores them in depth
+
+- `git reset --soft` - The staged snapshot and working directory are not altered in any way.
+- `git reset --mixed`- The staged snapshot is updated to match the specified commit, but the working directory is not affected. This is the default option.
+- `git reset --hard` - The staged snapshot and the working directory are both updated to match the specified commit.
+
