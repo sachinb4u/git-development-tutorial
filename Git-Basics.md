@@ -83,3 +83,7 @@ Command | Scope | Common use cases
 `git checkout` | File-level | Discard changes in the working directory
 `git revert` | Commit-level | Undo commits in a public branch
 `git revert` | File-level | (N/A)
+
+- `git clean` - command operates on untracked files. Untracked files are files that have been created within your repo's working directory but have not yet been added to the repository's tracking index using the git add command
+
+- `git clean -n` - The -n option will perform a "dry run" of `git clean`. This will show you which files are going to be removed without actually removing them. It is a best practice to always first perform a dry run of `git clean`
