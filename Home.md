@@ -3,4 +3,5 @@ GitHub Development Process
 
  Step| Name| Description
 -|--------|-----------
-1|[Git Installation](https://github.wdf.sap.corp/OmniChannelBanking/git-demo/wiki/Git-Installation-on-Windows) | Install Git on Windows machine. Follow the steps shown on the link. This will give you access to Git commands on command line and Git Bash
+1|[Git Installation](https://github.wdf.sap.corp/OmniChannelBanking/git-demo/wiki/Git-Installation) | Install Git on Windows machine. Follow the steps shown on the link. This will give you access to Git commands on command line and Git Bash
+2 | [Git Setup](https://github.wdf.sap.corp/OmniChannelBanking/git-demo/wiki/Git-Setup) | Configure and setup Git for using with SAP GitHub. Add public SSH key to your GitHub account. 
