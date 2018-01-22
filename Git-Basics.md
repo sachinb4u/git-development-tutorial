@@ -30,3 +30,11 @@ git stash apply stash@{0}        # apply stash changes to working directory
 - `git status` - List which files are staged, unstaged, and untracked
 > The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git.
 
+- `git log` - Displays committed snapshots
+> The git log command displays committed snapshots. It lets you list the project history, filter it, and search for specific changes.
+
+-  `git log -n <limit>`
+> Display the entire commit history using the default formatting. If the output takes up more than one screen, you can use Space to scroll and q to exit
+
+- `git log --oneline`
+> Condense each commit to a single line. This is useful for getting a high-level overview of the project history
