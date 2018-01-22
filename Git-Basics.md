@@ -68,7 +68,7 @@ We will focus on undoing the 872fa7e Try something crazy commit. Maybe things go
 ### Undoing uncommitted changes
 
 Before changes are committed to the repository history, they live in the staging index and the working directory. You may need to undo changes within these two areas. The staging index and working directory are internal Git state management mechanisms. For more detailed information on how these two mechanisms operate, visit the [`git reset`](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting) page which explores them in depth
-
+![](contents/images/git-basics/git-reset-params.png)
 - `git reset --soft` - The staged snapshot and working directory are not altered in any way.
 - `git reset --mixed`- The staged snapshot is updated to match the specified commit, but the working directory is not affected. This is the default option.
 - `git reset --hard` - The staged snapshot and the working directory are both updated to match the specified commit.
@@ -87,3 +87,6 @@ Command | Scope | Common use cases
 - `git clean` - command operates on untracked files. Untracked files are files that have been created within your repo's working directory but have not yet been added to the repository's tracking index using the git add command
 
 - `git clean -n` - The -n option will perform a "dry run" of `git clean`. This will show you which files are going to be removed without actually removing them. It is a best practice to always first perform a dry run of `git clean`
+
+### What is `git rebase`
+![](contents/images/git-basics/git-rebase.png)
