@@ -94,10 +94,17 @@ Command | Scope | Common use cases
 Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow. The general process can be visualized as the following:
 ![](contents/images/git-basics/git-rebase.png)
 
->This automatically rebases the current branch onto <base>, which can be any kind of commit reference (for example an ID, a branch name, a tag, or a relative reference to HEAD).
+From a content perspective, rebasing is changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base.
+
+>This automatically rebases the current branch onto \<base\>, which can be any kind of commit reference (for example an ID, a branch name, a tag, or a relative reference to HEAD).
 
 ```
    git checkout feature
    git rebase
 ```
-
+#### Usage
+The primary reason for rebasing is to maintain a linear project history. For example, consider a situation where the master branch has progressed since you started working on a feature branch. You want to get the latest updates to the master branch in your feature branch, but you want to keep your branch's history clean so it appears as if you've been working off the latest master branch. This gives the later benefit of a clean merge of your feature branch back into the master branch. Why do we want to maintain a "clean history"? The benefits of having a clean history become tangible when performing Git operations to investigate the introduction of a regression. A more real-world scenario would be:
+1. A bug is identified in the master branch. A feature that was working successfully is now broken.
+2. A developer examines the history of the master branch using git log because of the "clean history" the developer is quickly able to reason about the history of the project.
+3. The developer can not identify when the bug was introduced using `git log` so the developer executes a `git bisect`.
+4. Because the git history is clean, `git bisect` has a refined set of commits to compare when looking for the regression. The developer quickly finds the commit that introduced the bug and is able to act accordingly.
