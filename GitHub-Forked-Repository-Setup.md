@@ -48,7 +48,7 @@
     C:\temp\git-demo> git checkout master
     Switched to branch 'master'
 ```
-- Merge the changes from `upstream/master` into your local `master` branch. This brings your fork's `master` branch into sync with the upstream repository, without losing your local changes. If your local branch didn't have any unique commits, Git will instead perform a "fast-forward"
+- Merge the changes from `upstream/master` into your local `master` branch. This brings your fork's `master` branch in sync with the upstream repository, without losing your local changes.
 ```
       C:\temp\git-demo> git merge upstream/master
       Updating 65aa625..9de8458
@@ -69,6 +69,6 @@
          65aa625..9de8458  master -> master
 ```
 
-💡 # Important Note
-> You need to synchronize your forked repository often, it's like taking latest copy from the P4 repository and working on latest code.
->   * Before working on new defect or feature sync the forked repository from upstream repository.
+# 💡 Important Note
+> You need to synchronize your forked local repository regularly like you take latest changes from P4 repository and working on latest code.
+>   * Before working on new defect or feature sync the repository with upstream repository.
