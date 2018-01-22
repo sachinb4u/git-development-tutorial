@@ -34,3 +34,13 @@
 - Step10 <br>
 ![Step10](contents/images/git-setup/git-setup10.png)
 
+
+### Verify Installation
+
+- Go to commandline and run below command to see if Git is installed properly
+    ```
+    C:\Users\i313873> git --version
+    git version 2.15.1.windows.2
+
+    ```
+
