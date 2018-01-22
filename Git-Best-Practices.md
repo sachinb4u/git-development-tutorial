@@ -1,6 +1,8 @@
 ## Git Development Best Practices
 
 Every developer should follow below best practices while working on Git projects
+* Commit early and often
+    > Git only takes full responsibility for your data when you commit. If you fail to commit and the do something poorly thought out, you can run into trouble. Additionaly, having perioding checkpoints means that you can understand how you broke something
 
 * Always perform work in a branch. Do not make any changes on `master` branch
     >This way all work is done in isolation on a dedicated branch rather than the main branch. It allows you to submit multiple pull requests without confusion. You can iterate without polluting the master branch with potentially unstable, unfinished code. 
