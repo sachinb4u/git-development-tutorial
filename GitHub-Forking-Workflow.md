@@ -89,6 +89,35 @@
     ![Create Pull Request](contents/images/git-flow/pull-request-view2.png)       
 
 7. Working on review changes required
+
+
+### GitHub Review Process
+As of GitHub 2.8 GitHub comes with its own built-in review process. In the following this is explained.
+
+##### Starting a Review
+To start a review on a pull request...
+
+1. Open the Files changes tab in GitHub,
+2. Leave comments on the code,
+3. Select Start a review when finished. You can continue to leave multiple comments on the code.
+
+Once finished you can Review changes, select an option, and finally Submit review. Your options are as follows:
+
+* **Comment** - Comments do not require a review!
+* **Approve** - Approves the pull request, equivalent to a Gerrit +1
+* **Request** changes - Indicates that something needs to be resolved before merging to a Gerrit -1
+
+1. Once you create a pull request, it cannot be merged until 1 approved review is there 
+
+    ![Create Pull Request](contents/images/git-flow/pull-request-view3.png) 
+
+2. Reviewer see the file changes and request a change as part of the review comment. You will get a email notification.
+
+    ![Create Pull Request](contents/images/git-flow/pull-request-view4.png) 
+
+    ![Create Pull Request](contents/images/git-flow/pull-request-view5.png) 
+
+3. Developer works on the review comments and submits the changes to same branch.
     ```
     c:\Projects\github-sap\i313873\git-demo>git commit -am "As per review, removing Dhoni from the list"
     [feature/345-add-homepage d6a105a] As per review, removing Dhoni from the list
@@ -105,20 +134,14 @@
        5bba9ff..d6a105a  feature/345-add-homepage -> feature/345-add-homepage
     ```
 
-## GitHub Review Process
-As of GitHub 2.8 GitHub comes with its own built-in review process. In the following this is explained.
+4. Reviewer verifies the changes and approves Pull Request changes
 
-### Starting a Review
-To start a review on a pull request...
+    ![Create Pull Request](contents/images/git-flow/pull-request-view6.png) 
 
-1. Open the Files changes tab in GitHub,
-2. Leave comments on the code,
-3. Select Start a review when finished. You can continue to leave multiple comments on the code.
+    ![Create Pull Request](contents/images/git-flow/pull-request-view7.png) 
 
-Once finished you can Review changes, select an option, and finally Submit review. Your options are as follows:
+5. Project collaborator merges the changes to repository and Pull Request gets closed
 
-* **Comment** - Comments do not require a review!
-* **Approve** - Approves the pull request, equivalent to a Gerrit +1
-* **Request** changes - Indicates that something needs to be resolved before merging to a Gerrit -1
+    ![Create Pull Request](contents/images/git-flow/pull-request-view8.png) 
 
-1. Reviewer will see changes in file and add his comments or request for changes
+    ![Create Pull Request](contents/images/git-flow/pull-request-view9.png) 
