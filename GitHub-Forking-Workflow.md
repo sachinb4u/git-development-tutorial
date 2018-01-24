@@ -4,16 +4,23 @@
 
 ## Developer Workflow
 1. Developer identifies a feature or defect to be developed.
-    - __feature-345__ is the feature to be developed
+    - __feature-345__ is the feature to be developed which requires home page to be developed
 
 2. Get latest changes from upstream branch
     ```
     git checkout master
     # Get the changes from upstream `master` branch and merge into local master branch
     git pull upstream master
-```
+    ```
+3. Create a branch for the feature
+    ```
+    # go to master branch and create a new branch
+    git checkout master
 
-
+    # Create and checkout the branch
+    git checkout -b feature/345-add-homepage
+    Switched to a new branch 'feature/345-add-homepage'
+    ```
 ### Prerequisites
 - `git-demo` repository is forked
 
