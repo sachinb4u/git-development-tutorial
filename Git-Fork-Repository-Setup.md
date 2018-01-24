@@ -1,6 +1,20 @@
-> Following steps explain how to setup forked repository for the development
+>A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
 
-### Fork a repository
+>Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+
+### Proposing Changes to Someone Else's Project
+A great example of using forks to propose changes is for bug fixes. Rather than logging an issue for a bug you've found, you can:
+
+1. Fork the repository. Refer https://github.wdf.sap.corp/OmniChannelBanking/git-demo/wiki/GitHub-Forked-Repository-Setup
+2. Make the fix.
+3. Submit a pull request to the project owner.
+
+If the project owner likes your work, they might pull your fix into the original repository!
+
+
+Following steps explain how to setup forked repository for the development
+
+### Fork a repository [GitHub Guides](https://help.github.com/articles/fork-a-repo/)
 * Go to https://github.wdf.sap.corp/OmniChannelBanking/git-demo
 * Click on Fork and select your account to fork the repository.
 * e.g. I fork repository to my account and URL would be `https://github.wdf.sap.corp/i313873/git-demo`
