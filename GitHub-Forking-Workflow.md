@@ -1,23 +1,21 @@
-<a name="github-workflow"></a>
-## GitHub Forking workflow
+### Prerequisites
+- `git-demo` repository is forked
+- Forked repository is setup and configured as per the previous instructions
 
-Once you have setup a forked repository. Following are the steps to follow for the development
+## Developer Workflow
+1. Developer identifies a feature or defect to be developed.
+    - __feature-345__ is the feature to be developed
 
-## Forking a Repository [GitHub Guides](https://help.github.com/articles/fork-a-repo/)
+2. Get latest changes from upstream branch
+    ```
+    git checkout master
+    # Get the changes from upstream `master` branch and merge into local master branch
+    git pull upstream master
+```
 
 
-A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
-
-Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
-
-### Proposing Changes to Someone Else's Project
-A great example of using forks to propose changes is for bug fixes. Rather than logging an issue for a bug you've found, you can:
-
-1. Fork the repository. Refer https://github.wdf.sap.corp/OmniChannelBanking/git-demo/wiki/GitHub-Forked-Repository-Setup
-2. Make the fix.
-3. Submit a pull request to the project owner.
-
-If the project owner likes your work, they might pull your fix into the original repository!
+### Prerequisites
+- `git-demo` repository is forked
 
 ## GitHub Review Process
 As of GitHub 2.8 GitHub comes with its own built-in review process. In the following this is explained.
