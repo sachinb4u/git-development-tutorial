@@ -136,7 +136,7 @@ Once finished you can Review changes, select an option, and finally Submit revie
 
 4. Reviewer verifies the changes and approves Pull Request changes
 
-    ![Create Pull Request](contents/images/git-flow/pull-request-view6.png) 
+    ![Create Pull Request](contents/images/git-flow/pull-request-view6.PNG) 
 
     ![Create Pull Request](contents/images/git-flow/pull-request-view7.png) 
 
