@@ -1,8 +1,4 @@
-### Prerequisites
-- `git-demo` repository is forked
-- Forked repository is setup and configured as per the previous instructions
-
-## Developer Workflow
+## Developement Workflow
 1. Developer identifies a feature or defect to be developed.
     - __feature-345__ is the feature to be developed which requires home page to be developed
 
@@ -88,36 +84,34 @@
 
     ![Create Pull Request](contents/images/git-flow/pull-request-view2.png)       
 
-7. Working on review changes required
-
 
 ### GitHub Review Process
 As of GitHub 2.8 GitHub comes with its own built-in review process. In the following this is explained.
 
-##### Starting a Review
-To start a review on a pull request...
+>To start a review on a pull request...
 
-1. Open the Files changes tab in GitHub,
-2. Leave comments on the code,
-3. Select Start a review when finished. You can continue to leave multiple comments on the code.
+>1. Open the Files changes tab in GitHub,
+>2. Leave comments on the code,
+>3. Select Start a review when finished. You can continue to leave multiple comments on the code.
 
-Once finished you can Review changes, select an option, and finally Submit review. Your options are as follows:
+>Once finished you can Review changes, select an option, and finally Submit review. Your options are as follows:
 
-* **Comment** - Comments do not require a review!
-* **Approve** - Approves the pull request, equivalent to a Gerrit +1
-* **Request** changes - Indicates that something needs to be resolved before merging to a Gerrit -1
+>* **Comment** - Comments do not require a review!
+>* **Approve** - Approves the pull request, equivalent to a Gerrit +1
+>* **Request** changes - Indicates that something needs to be resolved before merging to a Gerrit -1
 
-1. Once you create a pull request, it cannot be merged until 1 approved review is there 
 
+7. Once developer creates a pull request, it cannot be merged until 1 approved review is there
     ![Create Pull Request](contents/images/git-flow/pull-request-view3.png) 
 
-2. Reviewer see the file changes and request a change as part of the review comment. You will get a email notification.
 
+8. Reviewer see the file changes and request a change as part of the review comment. You will get a email notification.
     ![Create Pull Request](contents/images/git-flow/pull-request-view4.png) 
 
     ![Create Pull Request](contents/images/git-flow/pull-request-view5.png) 
 
-3. Developer works on the review comments and submits the changes to same branch.
+
+9. Developer works on the review comments and submits the changes to same branch.
     ```
     c:\Projects\github-sap\i313873\git-demo>git commit -am "As per review, removing Dhoni from the list"
     [feature/345-add-homepage d6a105a] As per review, removing Dhoni from the list
@@ -134,13 +128,14 @@ Once finished you can Review changes, select an option, and finally Submit revie
        5bba9ff..d6a105a  feature/345-add-homepage -> feature/345-add-homepage
     ```
 
-4. Reviewer verifies the changes and approves Pull Request changes
+
+10. Reviewer verifies the changes and approves Pull Request changes
 
     ![Create Pull Request](contents/images/git-flow/pull-request-view6.PNG) 
 
     ![Create Pull Request](contents/images/git-flow/pull-request-view7.png) 
 
-5. Project collaborator merges the changes to repository and Pull Request gets closed
+11. Project collaborator merges the changes to repository and Pull Request gets closed
 
     ![Create Pull Request](contents/images/git-flow/pull-request-view8.png) 
 
