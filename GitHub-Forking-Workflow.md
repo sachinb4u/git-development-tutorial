@@ -70,8 +70,8 @@
 
    ```
 
-5. Once all changes for the feature are done and unit testing is done on a feature branch, you can push the branch to your forked repository
-```bash
+5. Once all changes for the feature and unit testing is done on a feature branch, you can push the branch to your forked repository
+    ```bash
     c:\Projects\github-sap\i313873\git-demo> git push origin feature/345-add-homepage
     Counting objects: 6, done.
     Delta compression using up to 4 threads.
@@ -81,8 +81,8 @@
     remote: Resolving deltas: 100% (2/2), completed with 1 local object.
     To https://github.wdf.sap.corp/i313873/git-demo.git
      * [new branch]      feature/345-add-homepage -> feature/345-add-homepage
-```
-
+    ```
+    
 
 ### Prerequisites
 - `git-demo` repository is forked
