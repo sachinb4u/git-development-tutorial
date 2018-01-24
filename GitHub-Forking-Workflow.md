@@ -83,6 +83,22 @@
      * [new branch]      feature/345-add-homepage -> feature/345-add-homepage
     ```
     
+6. Working on review changes required
+    ```
+    c:\Projects\github-sap\i313873\git-demo>git commit -am "As per review, removing Dhoni from the list"
+    [feature/345-add-homepage d6a105a] As per review, removing Dhoni from the list
+     1 file changed, 1 deletion(-)
+
+    c:\Projects\github-sap\i313873\git-demo>git push origin feature/345-add-homepage
+    Counting objects: 3, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 331 bytes | 165.00 KiB/s, done.
+    Total 3 (delta 1), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.wdf.sap.corp/i313873/git-demo.git
+       5bba9ff..d6a105a  feature/345-add-homepage -> feature/345-add-homepage
+    ```
 
 ### Prerequisites
 - `git-demo` repository is forked
