@@ -82,8 +82,13 @@
     To https://github.wdf.sap.corp/i313873/git-demo.git
      * [new branch]      feature/345-add-homepage -> feature/345-add-homepage
     ```
+6. Go to your forked repository webpage and create a pull request as shown below
     
-6. Working on review changes required
+    ![Create Pull Request](contents/images/git-flow/pull-request-view.png) 
+
+    ![Create Pull Request](contents/images/git-flow/pull-request-view2.png)       
+
+7. Working on review changes required
     ```
     c:\Projects\github-sap\i313873\git-demo>git commit -am "As per review, removing Dhoni from the list"
     [feature/345-add-homepage d6a105a] As per review, removing Dhoni from the list
@@ -100,9 +105,6 @@
        5bba9ff..d6a105a  feature/345-add-homepage -> feature/345-add-homepage
     ```
 
-### Prerequisites
-- `git-demo` repository is forked
-
 ## GitHub Review Process
 As of GitHub 2.8 GitHub comes with its own built-in review process. In the following this is explained.
 
@@ -118,3 +120,5 @@ Once finished you can Review changes, select an option, and finally Submit revie
 * **Comment** - Comments do not require a review!
 * **Approve** - Approves the pull request, equivalent to a Gerrit +1
 * **Request** changes - Indicates that something needs to be resolved before merging to a Gerrit -1
+
+1. Reviewer will see changes in file and add his comments or request for changes
