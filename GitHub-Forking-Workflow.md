@@ -1,6 +1,6 @@
 ## Developement Workflow
 #### 1. Developer identifies a feature or defect to be developed.
-- **feature-345** is the feature to be developed which requires home page to be developed
+- _feature-345_ is the feature to be developed which requires home page to be developed
 
 #### 2. Get latest changes from upstream branch
 ```bash
@@ -135,12 +135,12 @@ To https://github.wdf.sap.corp/i313873/git-demo.git
 
 #### 10. Reviewer verifies the changes and approves Pull Request changes
 
-    ![Create Pull Request](contents/images/git-flow/pull-request-view6.PNG) 
+![Create Pull Request](contents/images/git-flow/pull-request-view6.PNG) 
 
-    ![Create Pull Request](contents/images/git-flow/pull-request-view7.png) 
+![Create Pull Request](contents/images/git-flow/pull-request-view7.png) 
 
 #### 11. Project collaborator merges the changes to repository and Pull Request gets closed
 
-    ![Create Pull Request](contents/images/git-flow/pull-request-view8.png) 
+![Create Pull Request](contents/images/git-flow/pull-request-view8.png) 
 
-    ![Create Pull Request](contents/images/git-flow/pull-request-view9.png) 
+![Create Pull Request](contents/images/git-flow/pull-request-view9.png) 
