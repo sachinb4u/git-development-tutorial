@@ -7,13 +7,13 @@
     - __feature-345__ is the feature to be developed which requires home page to be developed
 
 2. Get latest changes from upstream branch
-    ```
+    ```bash
     git checkout master
     # Get the changes from upstream `master` branch and merge into local master branch
     git pull upstream master
     ```
 3. Create a branch for the feature
-    ```
+    ```bash
     # go to master branch and create a new branch
     c:\Projects\github-sap\i313873\git-demo>git checkout master
     Switched to branch 'master'
@@ -25,7 +25,7 @@
     ```
 
 4. Make changes for the feature and commit the changes
-   ```
+   ```bash
     c:\Projects\github-sap\i313873\git-demo> git status
     On branch feature/345-add-homepage
     Changes not staged for commit:
@@ -69,6 +69,21 @@
         Initial commit for Git Forking tutorial
 
    ```
+
+5. Once all changes for the feature are done and unit testing is done on a feature branch, you can push the branch to your forked repository
+```bash
+    c:\Projects\github-sap\i313873\git-demo> git push origin feature/345-add-homepage
+    Counting objects: 6, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (6/6), done.
+    Writing objects: 100% (6/6), 634 bytes | 211.00 KiB/s, done.
+    Total 6 (delta 2), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+    To https://github.wdf.sap.corp/i313873/git-demo.git
+     * [new branch]      feature/345-add-homepage -> feature/345-add-homepage
+```
+
+
 ### Prerequisites
 - `git-demo` repository is forked
 
