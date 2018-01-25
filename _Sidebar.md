@@ -3,4 +3,4 @@
 3. [Git Fork Repisitory Setup](Git-Fork-Repository-Setup)
 4. [Git Best Practices](Git-Best-Practices) 
 5. [Git Basics](Git-Basics) 
-6. [Git Forking Workflow](Git-Forking-Workflow) |
+6. [Git Forking Workflow](Git-Forking-Workflow)
