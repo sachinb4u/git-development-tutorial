@@ -12,6 +12,7 @@ c:\Projects\github-sap\OmniChannelBanking\deploytool> git branch
   master
 ```
 
+
 - Check if history is fine and your are applying tag on right revision
 ```
 c:\Projects\github-sap\OmniChannelBanking\deploytool> git log -n1
@@ -22,6 +23,7 @@ Date:   Tue Jan 30 14:48:05 2018 +0530
     deploy.sh  unix format
 ```
 
+
 - Create a tag with with message
 ```
 c:\Projects\github-sap\OmniChannelBanking\deploytool> git tag -a v8.3.4.PL02-RELEASE -m "OCB 8.3 SP04 PL02 Release"
@@ -29,6 +31,7 @@ c:\Projects\github-sap\OmniChannelBanking\deploytool> git tag -a v8.3.4.PL02-REL
 c:\Projects\github-sap\OmniChannelBanking\deploytool> git tag
 v8.3.4.PL02-RELEASE
 ```
+
 
 - Push the tag to the remote repository
 ```
