@@ -47,6 +47,11 @@ Following steps explain how to setup forked repository for the development
 ```
 
 ### Syncing repository with Upstream changes
+- Check out your fork's local `master` branch.
+```
+    C:\temp\git-demo> git checkout master
+    Switched to branch 'master'
+```
 
 - Fetch the branches and their respective commits from the upstream repository.
 ```
@@ -57,11 +62,7 @@ Following steps explain how to setup forked repository for the development
     From github.wdf.sap.corp:OmniChannelBanking/git-demo
      * [new branch]      master     -> upstream/master
 ```	
-- Check out your fork's local `master` branch.
-```
-    C:\temp\git-demo> git checkout master
-    Switched to branch 'master'
-```
+
 - Merge the changes from `upstream/master` into your local `master` branch. This brings your fork's `master` branch in sync with the upstream repository, without losing your local changes.
 ```
       C:\temp\git-demo> git merge upstream/master
