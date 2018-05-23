@@ -77,3 +77,32 @@ Date:   Mon Apr 30 13:48:33 2018 +0530
     ODATA Implementation For Global Messages
 
 ```
+
+### How to see changes done in commit with list of changed files
+> git show --name-status a7f9ffe78a
+>
+> git show --name-status (commit-id)
+
+This will show the commit with message and changed file with A (Added), M (Modified) or D (Deleted) status
+```
+$ git show --name-status a7f9ffe78a
+
+commit a7f9ffe78a3512dc3b6a4a60634f075a3f56b9ec
+Author: Aniket Sagar <aniket.sagar@sap.com>
+Date:   Wed May 9 12:21:46 2018 +0530
+
+    Updated the value for Interstitial Msg type to properly map with GlobalMessageConsts
+
+M       com.sap.banking.common-api/src/main/java/com/ffusion/beans/messages/GlobalMessageConsts.java
+M       com.sap.banking.messages-api/src/main/java/com/sap/banking/messages/endpoint/constants/BankMessagesType.java
+```
+
+### How to see the changes done in the commit using WinMerge to verify difference in modified files
+> git difftool a7f9ffe78a~1 a7f9ffe78a
+>
+> git difftool (commit-id)~1 (commit-id)
+
+This will open WinMerge or any difftool as per your configuration. It will open each modified file.
+```
+
+```
