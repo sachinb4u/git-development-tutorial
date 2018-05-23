@@ -3,7 +3,8 @@
 
 Only show 2 entries with list of files and status of change
 ```git
-$ git log --name-status
+$ git log --name-status -n2
+
 commit 335025631155bdc6daf2f85106ec2a2bf3bd9729 (HEAD -> gm_new)
 Author: Aniket Sagar <aniket.sagar@sap.com>
 Date:   Fri May 11 14:10:57 2018 +0530
