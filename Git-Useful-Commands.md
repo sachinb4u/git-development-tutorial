@@ -103,6 +103,30 @@ M       com.sap.banking.messages-api/src/main/java/com/sap/banking/messages/endp
 > git difftool (commit-id)~1 (commit-id)
 
 This will open WinMerge or any difftool as per your configuration. It will open each modified file.
+
+
+
+### How to know which is the base for the branch created. i.e. from which commit this branch has been created
+> git show --name-status $(git merge-base test1 upstream/OCBDEV)
+>
+> git show --name-status $(git merge-base branch base-branch)
+>
+This is combined command. `git merge-base branch base-branch` give you the commit it which gets passed to `git show --name-status <id>` to show the details
 ```
+$ git show --name-status $(git merge-base test1 upstream/OCBDEV)
+
+commit 046b2a056e3644a2f4f833bf26e905207bfb3f93
+Author: Sandeep Ambule <sandeep.ambule@sap.com>
+Date:   Fri Feb 9 12:20:10 2018 +0530
+
+    build_war.bat fix (#72)
+
+    * Moved com.sap.banking.frontend-web project to mavenservices
+
+    * GitHub Migration of mavenservices-build script fix
+
+    * build_war.bat fix
+
+M       build_war.bat
 
 ```
