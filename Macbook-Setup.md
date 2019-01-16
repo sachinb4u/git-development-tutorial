@@ -31,3 +31,12 @@ The key's randomart image is:
 Keys get saved to `~/.ssh`.
 
 2. Add SSH public key `~/.ssh/id_rsa.pub` to Github
+
+3. Installing Git
+    - Open terminal
+    - Just `git` and enter, it will open window to ask you to install git. Follow the instructions and complete setup
+    - Verify if git got installed
+    ```shell
+    C02XR1UVJGH5:git-demo i313873$ git version
+    git version 2.17.2 (Apple Git-113)
+    ```
