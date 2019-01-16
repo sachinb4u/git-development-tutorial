@@ -31,8 +31,7 @@ The key's randomart image is:
 ```
 Keys get saved to `~/.ssh`.
 
-2. Add SSH public key `~/.ssh/id_rsa.pub` to Github
-   Verify that connection is working
+2. Add SSH public key `~/.ssh/id_rsa.pub` to Github and verify that connection is working
 ```shell
 C02XR1UVJGH5:git-demo i313873$ ssh -T git@github.wdf.sap.corp
 
