@@ -106,3 +106,20 @@ $ brew doctor
     $ ant -version
     Apache Ant(TM) version 1.10.5 compiled on July 10 2018
     ```
+
+3. Install `gradle`
+    - Install `sdkman`
+    ```
+    $ curl -s "https://get.sdkman.io" | bash
+    ```
+    - Open new terminal to get the changes
+    
+    - Install `gradle` 4.x
+    ```
+    $ sdk install gradle 4.10.3
+    ```
+
+   - Verify gradle installation
+   ```
+   $ gradle -version
+   ```
