@@ -28,3 +28,25 @@
     $ git version
     git version 2.17.2 (Apple Git-113)
     ```
+
+### Software Setup
+
+#### JDK 8
+
+- Download jdk 8 from Oracle [JDK Download location](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+- You should have `jdk-8u202-macosx-x64.dmg` file in `Downloads` folder. 
+
+- Double click on file and install it and then drag and drop to `Applications`
+
+- Set `JAVA_HOME` in `~/.bash_profile` as shown below. You can close the terminal and see if it gets applied
+   ```shell
+   export JAVA_HOME=$(/usr/libexec/java_home)
+   ```
+   ```
+   $ echo $JAVA_HOME
+   /Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home
+
+   $ javac -version
+   javac 1.8.0_202
+   ```
