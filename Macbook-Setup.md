@@ -50,3 +50,59 @@
    $ javac -version
    javac 1.8.0_202
    ```
+
+#### Install `brew` package manager
+
+- Install xcode-select, it might be available already.
+```
+$ xcode-select --install
+xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+```
+
+- Request Admin PRivileges before running the script
+```shell
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+Check if gets installed properly
+```
+$ brew doctor
+```
+
+### Install softwares using `brew`
+
+1. Install `maven`
+
+    ```shell
+    $ brew install maven
+
+    $ mvn -version
+    Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-25T00:11:47+05:30)
+    Maven home: /usr/local/Cellar/maven/3.6.0/libexec
+    Java version: 1.8.0_202, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre
+    Default locale: en_US, platform encoding: UTF-8
+    OS name: "mac os x", version: "10.14.2", arch: "x86_64", family: "mac"
+    ```
+
+2. Install `ant`
+
+    ```shell
+    $ brew install ant
+    
+    $ brew install ant-contrib
+    ```
+    - Note the install directory, it should be like `/usr/local/Cellar/ant/1.10.5/libexec/lib/`
+
+    - set environment variable in `~/.bash_profile` as shown
+
+    ```
+    export ANT_HOME=/usr/local/Cellar/ant/1.10.5/libexec
+    ```
+    - Copy the `ant-contrib-1.0b3.jar` to ANT lib.
+    ```
+    $ cp /usr/local/Cellar/ant-contrib/1.0b3/share/ant/ant-contrib-1.0b3.jar $ANT_HOME/lib
+    ```
+    - Verify ant installation
+    ```
+    $ ant -version
+    Apache Ant(TM) version 1.10.5 compiled on July 10 2018
+    ```
